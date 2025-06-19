@@ -8,7 +8,7 @@ This repository documents the design of a custom STM32-based nano drone flight c
 ## Microcontroller Unit (MCU)
 
 - **STM32F722RET6**, selected for performance and documentation.
-- 8 MHz HSE oscillator with tuning capacitors for STM32 and Betaflight bootloader compatibility.
+- 8 MHz HSE oscillator with tuning capacitors for STM32 and sensors.
 - Power monitoring via voltage divider and ADC.
 - On-board **SWDIO/SWCLK** for debugging and bootloader flashing (DFU mode via BOOT and RESET).
 - **Decoupling capacitors** used throughout for stability under current spikes.
@@ -60,15 +60,13 @@ This repository documents the design of a custom STM32-based nano drone flight c
   - Top and Bottom: Signal layers
   - Inner Layers: +2.8V and Ground
 - Motor PWM routed in +2.8V layer due to limited space.
-- All measurements done in inches (2 decimal place accuracy).
-- Includes 3D top and bottom render views.
 
 ---
 
 ## Next Steps & Recommendations
 
 - Order fabricated PCBs.
-- Flash bootloader using SWD or DFU for Betaflight/ArduPilot compatibility.
+- Flash bootloader / firmware using DFU for Betaflight/ArduPilot.
 
 ### Future Improvements
 - Migrate from 4-layer to 2-layer for cost/manufacturing optimization.
@@ -93,5 +91,5 @@ For a full list, see the Bill of Materials Excel sheet. Sample entries:
 - STM32CubeIDE (Pin config, firmware)
 - KiCad 9.0  (PCB layout and schematic)
 - DigiKey (Component sourcing)
-- Calipers (Reverse-engineering nano board dimensions)
+- Calipers (Nano board dimensions)
 
