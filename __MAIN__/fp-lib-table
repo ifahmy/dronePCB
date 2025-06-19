@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ICM_42688_P")(type "KiCad")(uri "${KIPRJMOD}/Parts/ICM_42688_P")(options "")(descr ""))
+  (lib (name "SI2302_TP")(type "KiCad")(uri "${KIPRJMOD}/Parts/SI2302_TP/KiCADv6/SI2302_TP.pretty")(options "")(descr ""))
+)
